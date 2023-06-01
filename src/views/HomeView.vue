@@ -7,8 +7,8 @@
         <h1 v-on:click="counter.Tab_Function=4" :class="{'bg-sky-500 text-white':counter.Tab_Function==4}" class="bg-gray-300 rounded px-2 py-2 font-bold cursor-pointer w-full">Chức năng chưa có sẵn</h1>
         <h1 v-on:click="counter.Tab_Function=5" :class="{'bg-sky-500 text-white':counter.Tab_Function==5}" class="bg-gray-300 rounded px-2 py-2 font-bold cursor-pointer w-full">Chức năng chưa có sẵn</h1>
     </div>
-    <div class="flex flex-col justify-center items-center w-full py-5">
-      <div v-show="counter.Tab_Function==1" class="flex flex-col items-center grow gap-5">
+    <div class="flex flex-col justify-center items-center w-full py-4 px-4">
+      <div v-show="counter.Tab_Function==1" class="flex flex-col items-center w-full grow gap-4">
         <div class="flex flex-col justify-center items-center min-h-[500px] border-[2px] border-gray-200 w-full px-2 py-2 gap-5">
           <div class="flex gap-5 justify-center items-center">
             <div v-show="counter.button_function==1||counter.button_function==2||counter.button_function==3" class="flex flex-col gap-2 justify-center items-center">
@@ -42,18 +42,18 @@
           <div v-show="counter.Loi_file==2" class="flex justify-center items-center text-[18px] font-bold rounded text-red-500 border-[1px] border-red-500 px-2 py-1">Tệp tải lên bị lỗi, không phù hợp với chức năng</div>
           <div v-on:click="counter.button_function=1; counter.Loi_file=1; resetFile();"  v-show="counter.button_function==4" class="flex justify-center items-center text-[22px] font-bold underline underline-offset-8 text-sky-600 cursor-pointer">Làm việc với một File khác</div>
         </div>
-        <div class="flex flex-col  items-center border-[2px] border-gray-200 px-2  h-full ">
+        <div class="flex flex-col  items-center border-[2px] border-gray-200 px-2 w-full grow h-full ">
           <div class="flex justify-center items-center w-full  h-[130px] border-b-[2px] border-gray-200"><h1 class="text-[40px] font-bold  w-full text-center">Các bước thực hiện chức năng</h1></div>
-          <div class="flex justify-center items-center gap-5  h-full">
-              <div class="flex flex-col justify-center items-center text-[25px]">
+          <div class="flex justify-center items-center gap-5 w-full h-full">
+              <div class="flex flex-col justify-center items-center text-[20px]">
                 <font-awesome-icon icon="fa-solid fa-file-arrow-up" class="text-gray-800 text-[50px]" />
                 <h1 class="font-bold text-gray-600">Tải lên Tệp(.xlsx)</h1>
               </div>
-              <div class="flex flex-col justify-center items-center text-[25px]">
+              <div class="flex flex-col justify-center items-center text-[20px]">
                 <font-awesome-icon icon="fa-solid fa-file-export" class="text-gray-800 text-[50px]"/>
                 <h1 class="font-bold text-gray-600">Chuyển đổi Tệp(.xlsx)</h1>
               </div>
-              <div class="flex flex-col justify-center items-center text-[25px]">
+              <div class="flex flex-col justify-center items-center text-[20px]">
                 <font-awesome-icon icon="fa-solid fa-file-arrow-down" class="text-gray-800 text-[50px]"/>
                 <h1 class="font-bold text-gray-600">Tải xuống Tệp(.zip)</h1>
               </div>
